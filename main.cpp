@@ -27,7 +27,7 @@ CLIVE = RGB(0, 250, 100),   // 存活细胞颜色（绿色）
 CDEAD = RGB(0, 0, 0),    // 死亡细胞颜色（黑色）
 CGRID = RGB(50, 50, 60),    // 网格线颜色
 CBG = RGB(0, 0, 0),      // 背景色
-CTEXT = RGB(150, 150, 160); // 文字颜色（灰）
+CTEXT = RGB(250, 250, 250); // 文字颜色（白）
 
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 void Init();                    // 初始化所有细胞为死亡状态
