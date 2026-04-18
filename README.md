@@ -1,4 +1,4 @@
-# lifeGame
+# Game of life
 # 康威生命游戏 (Conway's Game of Life)
 
 基于 Windows GDI 实现的康威生命游戏模拟器，64x64 网格。
