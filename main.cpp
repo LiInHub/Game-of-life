@@ -16,7 +16,7 @@ const int WH = GH * CS + GM * 2 + UIH + 20;      // 窗口高度 = 网格高度 
 const int TID = 1;      // 定时器ID
 const int TINT = 100;    // 定时器间隔(毫秒)，每100ms更新一代
 
-bool grid[GH][GW];      // 当前世代细胞状态，true=存活
+bool grid[GH][GW];      // 当前世代细胞状态
 bool next[GH][GW];      // 下一世代细胞状态（双缓冲）
 bool run = false;       // 游戏运行状态，true=自动演化
 bool gridLine = true;   // 是否显示网格线
@@ -135,7 +135,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp) {
     }
 
     case WM_KEYDOWN:
-        // 键盘控制
+        // 控制器
         switch (wp) {
         case VK_SPACE: run = !run; break;      // 空格：运行/暂停
         case 'R': Rand(); break;                // R：随机初始化
